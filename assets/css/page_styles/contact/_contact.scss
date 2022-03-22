@@ -1,0 +1,42 @@
+.contact-header{
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin: 55px 0px 20px 0px;
+}
+
+form{
+    margin-bottom: 107px;
+    .inputs{
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+        color: black;
+        .input-group{
+            input{
+                border: none;
+                padding: 10px 20px;
+                margin: 3px;
+            }
+            label{
+                font-size:30px;
+            }
+            textarea{
+                border: none;
+            }
+        }
+    }
+    button{
+        
+        background-color: $main-color;
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: $link-decor;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 10px 30px;
+        border: none;
+        display: flex;
+        margin: 2px auto 0px auto;
+        cursor: pointer;
+    }
+}

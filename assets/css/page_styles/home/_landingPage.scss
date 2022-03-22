@@ -1,0 +1,15 @@
+.landing-page {
+	.landing-image {
+		width: 100%;
+		opacity: 100%;
+
+	}
+	.landing-header {
+		margin-top: 70px;
+		text-align: center;
+		border-bottom: $border_def;
+		padding-bottom: 140px;
+		font-family: 'Righteous', cursive;
+		font-size: 3rem;
+	}
+}

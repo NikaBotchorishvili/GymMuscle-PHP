@@ -1,0 +1,44 @@
+.membership-deals {
+	.membership-header {
+		color: black;
+		text-align: center;
+		margin: 170px 0px;
+		font-size: 1.5rem;
+	}
+	.cont {
+		.grid {
+			@include grid;
+			.item-cont{
+				.items {
+					border: $border_def;
+					text-align: center;
+					width: 20vw;
+					padding: 20px;
+					.item-header {
+						margin-bottom: 25px;
+					}
+					.item-details {
+						color: black;
+					}
+					.item-icon {
+						margin-top: 100px;
+					}
+				}
+				button{
+					background-color: $main-color;
+					color: white;
+					text-decoration: underline;
+					border-radius: 10px;
+					font-size: 20px;
+					padding: 10px 30px;
+					border: none;
+					display: flex;
+					margin: 2px auto 0px auto;
+					cursor: pointer;
+				}
+			}
+            padding-bottom: 170px;
+            border-bottom: $border_def;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+footer{
+    color: white;
+    background-color: #544242;
+    
+    .container{
+        max-width: $container_max_width;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        .left-foot{
+            #copyright{
+                font-size: 0.7rem;
+                margin-bottom: 9px;
+            }
+        }
+        #partner-companies{
+            #partner-header{
+                font-size: 1rem;
+            }
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}

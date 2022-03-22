@@ -1,0 +1,1 @@
+This is a project which I'm building for practicing PHP before starting laravel.
