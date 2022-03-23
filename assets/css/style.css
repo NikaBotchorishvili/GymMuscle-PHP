@@ -273,4 +273,24 @@ form button {
     width: 50vh;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 0.9em;
+  background-color: #eb9898;
+}
+
+body::-webkit-scrollbar-track {
+  margin-block: 0.3rem;
+  border-radius: 100vw;
+  background-color: #eb9898;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e92c2c;
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #861010;
+}
 /*# sourceMappingURL=style.css.map */

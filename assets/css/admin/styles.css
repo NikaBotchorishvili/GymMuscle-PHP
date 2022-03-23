@@ -1,150 +1,144 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-	font-family: sans-serif;
-	background-color: #fff2f2;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  font-family: sans-serif;
+  background-color: #fff2f2;
 }
 
 aside {
-	width: 25%;
-	height: 100vh;
-	background-color: white;
-	border-right: 2px solid black;
-	text-align: center;
+  width: 25%;
+  height: 100vh;
+  background-color: white;
+  border-right: 2px solid black;
+  text-align: center;
 }
 
 aside .container {
-	width: 100%;
-	height: 70%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-ms-flex-pack: distribute;
-	justify-content: space-around;
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 aside .container #sidebar-header {
-	padding-top: 5%;
-	color: red;
+  padding-top: 5%;
+  color: red;
 }
 
 aside .container nav ul {
-	list-style: none;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
 }
 
 aside .container nav li a {
-	color: black;
-	font-size: 16px;
+  color: black;
+  font-size: 16px;
 }
 
 aside .container .sidebar-bottom {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	gap: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
 }
 
 aside .container .sidebar-bottom .user-who {
-	border-top: 1px solid black;
-	margin-top: 5%;
-	font-weight: bolder;
+  border-top: 1px solid black;
+  margin-top: 5%;
+  font-weight: bolder;
 }
 
 aside .container .sidebar-bottom .log-out {
-	color: red;
-	-webkit-text-decoration-color: black;
-	text-decoration-color: black;
-	font-size: 1.3rem;
+  color: red;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+  font-size: 1.3rem;
 }
 
 #login {
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(#4b6cb7),
-		to(#182848)
-	);
-	background: linear-gradient(90deg, #4b6cb7, #182848);
+  background: -webkit-gradient(linear, left top, right top, from(#4b6cb7), to(#182848));
+  background: linear-gradient(90deg, #4b6cb7, #182848);
 }
 
 #login .login {
-	width: 360px;
-	padding: 8% 0 0;
-	margin: auto;
-	font-family: sans-serif;
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  font-family: sans-serif;
 }
 
 #login .login .form {
-	position: relative;
-	z-index: 1;
-	background: #ffffff;
-	border-radius: 10px;
-	max-width: 360px;
-	margin: 0 auto 100px;
-	padding: 45px;
-	text-align: center;
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 10px;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
 }
 
 #login .login .form input {
-	outline: 0;
-	background: #f2f2f2;
-	width: 100%;
-	border: 0;
-	border-radius: 5px;
-	margin: 0 0 15px;
-	padding: 15px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-size: 14px;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
 }
 
 #login .login .form input:focus {
-	background: #dbdbdb;
+  background: #dbdbdb;
 }
 
 #login .login .form input:active {
-	background: #395591;
+  background: #395591;
 }
 
 #login .login .form span {
-	font-size: 75px;
-	color: #4b6cb7;
+  font-size: 75px;
+  color: #4b6cb7;
 }
 
 #login .login .form button {
-	text-transform: uppercase;
-	outline: 0;
-	background: #4b6cb7;
-	width: 100%;
-	border: 0;
-	border-radius: 5px;
-	padding: 15px;
-	color: #ffffff;
-	font-size: 14px;
-	-webkit-transition: all 0.3 ease;
-	transition: all 0.3 ease;
-	cursor: pointer;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4b6cb7;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
