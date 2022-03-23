@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: content-box;
+	font-family: sans-serif;
+	background-color: rgb(255, 242, 242);
+}
+
+aside {
+	@include heightAndWidth(100vh, 25%, white);
+
+	border-right: 2px solid black;
+	text-align: center;
+	.container {
+		width: 100%;
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		#sidebar-header {
+			padding-top: 5%;
+			color: red;
+		}
+		nav {
+			ul {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+			li {
+				a {
+					color: black;
+					font-size: 16px;
+				}
+			}
+		}
+		.sidebar-bottom {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			.user-who {
+				border-top: 1px solid black;
+				margin-top: 5%;
+				font-weight: bolder;
+			}
+			.log-out {
+				color: red;
+				text-decoration-color: black;
+				font-size: 1.3rem;
+			}
+		}
+	}
+}

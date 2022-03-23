@@ -1,0 +1,5 @@
+@mixin heightAndWidth($height, $width, $color) {
+	width: $width;
+	height: $height;
+	background-color: $color;
+}

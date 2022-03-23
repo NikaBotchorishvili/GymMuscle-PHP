@@ -13,6 +13,7 @@ abstract class Controller{
     public function renderView(){
         $this->index();
         $tpl = $this->tpl;
+        $data = $this->data;
         require_once "views/layout.php";
     }
 }

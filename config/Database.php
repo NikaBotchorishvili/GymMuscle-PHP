@@ -20,7 +20,7 @@ class Database{
         }
     }
 
-    public function  getData($table){
+    public function getData($table){
         $data = [];
 
         $query = "SELECT * FROM " . $table;
@@ -32,6 +32,22 @@ class Database{
 
         while($row = $sql->fetch()){
             $data[] = $row;
+        }
+        return $data;
+    }
+
+    public function getSingleData($table){
+        $data = [];
+
+        $query = "SELECT * FROM " . $table;
+
+        
+        $sql = $this->pdo->prepare($query);
+
+        $sql->execute();
+
+        while($row = $sql->fetch()){
+            $data = $row;
         }
         return $data;
     }
