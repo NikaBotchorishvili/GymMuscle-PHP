@@ -1,6 +1,6 @@
 .membership-deals {
 	.membership-header {
-		color: black;
+		color: $secondary-color;
 		text-align: center;
 		margin: 170px 0px;
 		font-size: 1.5rem;
@@ -18,7 +18,7 @@
 						margin-bottom: 25px;
 					}
 					.item-details {
-						color: black;
+						color: $secondary-color;
 					}
 					.item-icon {
 						margin-top: 100px;

@@ -4,15 +4,15 @@
 
         <nav>
             <ul>
-                <li><a href="#">Membership Deals</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="?page=home">Membership Deals</a></li>
+                <li><a href="?page=about">About us</a></li>
             </ul>
         </nav>
 
         <div class="sidebar-bottom">
             <h2 class="user-who">Logged in as Admin</h2>
 
-            <a class="log-out" href="#">Log out</a>
+            <a class="log-out" href="./logout.php">Log out</a>
         </div>
     </div>
 </aside>

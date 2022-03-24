@@ -9,12 +9,12 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #ff0000;
+  color: #FA1B00;
   font-family: sans-serif;
 }
 
 header {
-  background-color: #6d5b5b;
+  background-color: #524646;
   opacity: 0.95;
   position: -webkit-sticky;
   position: sticky;
@@ -39,7 +39,7 @@ header .container {
 }
 
 header .container .left h1 {
-  color: #ffdede;
+  color: #00FA77;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -63,7 +63,7 @@ header .container .right ul li {
 
 header .container .right ul li a {
   text-decoration: none;
-  color: red;
+  color: #FA1B00;
   font-size: 1.8rem;
   -webkit-text-decoration-color: white;
           text-decoration-color: white;
@@ -74,8 +74,8 @@ header .container .right ul li a:hover {
   -webkit-transition: linear 1s;
   transition: linear 1s;
   text-decoration: underline;
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
+  -webkit-text-decoration-color: #00FA77;
+          text-decoration-color: #00FA77;
 }
 
 footer {
@@ -123,6 +123,7 @@ footer .container #partner-companies #partner-header {
 }
 
 .landing-page .landing-header {
+  color: #00FA77;
   margin-top: 70px;
   text-align: center;
   border-bottom: 1px solid black;
@@ -132,7 +133,7 @@ footer .container #partner-companies #partner-header {
 }
 
 .membership-deals .membership-header {
-  color: black;
+  color: #00FA77;
   text-align: center;
   margin: 170px 0px;
   font-size: 1.5rem;
@@ -160,7 +161,7 @@ footer .container #partner-companies #partner-header {
 }
 
 .membership-deals .cont .grid .item-cont .items .item-details {
-  color: black;
+  color: #00FA77;
 }
 
 .membership-deals .cont .grid .item-cont .items .item-icon {
@@ -168,7 +169,7 @@ footer .container #partner-companies #partner-header {
 }
 
 .membership-deals .cont .grid .item-cont button {
-  background-color: #ff0000;
+  background-color: #FA1B00;
   color: white;
   text-decoration: underline;
   border-radius: 10px;
@@ -200,7 +201,8 @@ form .inputs {
 }
 
 form .inputs .input-group input {
-  border: none;
+  border-radius: 20px;
+  border: 1px solid black;
   padding: 10px 20px;
   margin: 3px;
 }
@@ -210,15 +212,15 @@ form .inputs .input-group label {
 }
 
 form .inputs .input-group textarea {
-  border: none;
+  border-radius: 20px;
 }
 
 form button {
-  background-color: #ff0000;
+  background-color: #FA1B00;
   color: white;
   text-decoration: underline;
-  -webkit-text-decoration-color: white;
-          text-decoration-color: white;
+  -webkit-text-decoration-color: #00FA77;
+          text-decoration-color: #00FA77;
   border-radius: 10px;
   font-size: 20px;
   padding: 10px 30px;

@@ -3,8 +3,8 @@
 class Page{
     public $pageName;
 
-    public function __construct(){
-        $this->pageName = isset($_GET['page']) && !empty($_GET['page'])? $_GET['page']: "home";
+    public function __construct($request){
+        $this->pageName = isset($request['page']) && !empty($request['page'])? $request['page']: "home";
     }
 
     public function getModel(){

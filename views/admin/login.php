@@ -8,11 +8,14 @@
 <body id="login">
     <div class="login">
         <div class="form">
-            <form class="login-form" method="post">
-            <span class="material-icons">Log In</span>
-            <input type="text" placeholder="email" required>
-            <input type="password" placeholder="password" required>
-            <button>SUBMIT</button>
+            <form class="login-form" method="post" action="./login.php">
+                <span class="material-icons">Log In</span>
+
+                <input type="text" placeholder="username" name="username" required>
+
+                <input type="password" placeholder="password" name="password" required>
+
+                <button>SUBMIT</button>
             </form>  
         </div>
     </div>

@@ -11,10 +11,11 @@ abstract class AdminController{
     abstract public function index();
 
     public function renderView(){
+        $this->index();
 
         $data = $this->data;
         $tpl = $this->tpl;
 
-        require_once "./views/admin/layout.php";
+        require_once "../views/admin/layout.php";
     }
 }

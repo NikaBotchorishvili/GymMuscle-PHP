@@ -13,7 +13,8 @@ form{
         color: black;
         .input-group{
             input{
-                border: none;
+                border-radius: 20px;
+                border: 1px solid black;
                 padding: 10px 20px;
                 margin: 3px;
             }
@@ -21,7 +22,7 @@ form{
                 font-size:30px;
             }
             textarea{
-                border: none;
+                border-radius: 20px;
             }
         }
     }
@@ -30,7 +31,7 @@ form{
         background-color: $main-color;
         color: white;
         text-decoration: underline;
-        text-decoration-color: $link-decor;
+        text-decoration-color: $secondary-color;
         border-radius: 10px;
         font-size: 20px;
         padding: 10px 30px;
