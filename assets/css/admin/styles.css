@@ -8,24 +8,19 @@ body {
           box-sizing: content-box;
   font-family: sans-serif;
   background-color: #AFB8BA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 aside {
   width: 20%;
   height: 100vh;
   background-color: #f3efef;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
   -webkit-box-shadow: 0px 2px 10px black;
           box-shadow: 0px 2px 10px black;
   text-align: center;
+  display: inline-block;
 }
 
-aside .container {
+aside header .container {
   width: 100%;
   height: 70%;
   display: -webkit-box;
@@ -39,12 +34,12 @@ aside .container {
       justify-content: space-around;
 }
 
-aside .container #sidebar-header {
+aside header .container #sidebar-header {
   padding-top: 5%;
   color: red;
 }
 
-aside .container nav ul {
+aside header .container nav ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,12 +51,12 @@ aside .container nav ul {
   gap: 20px;
 }
 
-aside .container nav li a {
+aside header .container nav li a {
   color: black;
   font-size: 16px;
 }
 
-aside .container .sidebar-bottom {
+aside header .container .sidebar-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,13 +67,13 @@ aside .container .sidebar-bottom {
   gap: 50px;
 }
 
-aside .container .sidebar-bottom .user-who {
+aside header .container .sidebar-bottom .user-who {
   border-top: 1px solid black;
   margin-top: 5%;
   font-weight: bolder;
 }
 
-aside .container .sidebar-bottom .log-out {
+aside header .container .sidebar-bottom .log-out {
   color: red;
   -webkit-text-decoration-color: black;
           text-decoration-color: black;
@@ -147,5 +142,69 @@ aside .container .sidebar-bottom .log-out {
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+}
+
+.main {
+  display: inline-block;
+  width: calc(100% - 340px);
+  vertical-align: top;
+}
+
+.actions form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  place-items: center;
+  margin: 200 auto;
+  text-align: center;
+  background-color: #d1b5b5;
+  width: 500px;
+  height: 300px;
+  -webkit-box-shadow: 2px 2px 5px 5px #494545;
+          box-shadow: 2px 2px 5px 5px #494545;
+  border-radius: 30px;
+  gap: 20px;
+  color: white;
+}
+
+.actions form .input-group label {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.actions form .input-group input {
+  padding: 10 30;
+  border-radius: 10px;
+  border: none;
+  background-color: #8d7575;
+  color: white;
+}
+
+.actions form .input-group textarea {
+  border-radius: 10px;
+  border: none;
+  background-color: #8d7575;
+  max-height: 100px;
+  max-width: 300px;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.actions form button {
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  border-radius: 15px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #cf5353;
 }
 /*# sourceMappingURL=styles.css.map */

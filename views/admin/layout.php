@@ -10,10 +10,13 @@
 <?php
 
 require_once "common/header.php";
-
-require_once "pages/" . $tpl . ".php"; 
-
 ?>
+
+<div class="main">
+    <?php
+        require_once "pages/" . $tpl . ".php";
+    ?> 
+</div>
 
 
 </body>

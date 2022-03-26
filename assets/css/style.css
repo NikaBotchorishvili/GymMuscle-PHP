@@ -219,8 +219,8 @@ form button {
   background-color: #FA1B00;
   color: white;
   text-decoration: underline;
-  -webkit-text-decoration-color: #00FA77;
-          text-decoration-color: #00FA77;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
   border-radius: 10px;
   font-size: 20px;
   padding: 10px 30px;

@@ -3,3 +3,61 @@
 @import "./page_styles/header";
 @import "./page_styles/login/login";
 
+
+
+.main {
+	display: inline-block;
+	width: calc(100% - 340px);
+	vertical-align: top;
+}
+
+.actions {
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		place-items: center;
+		margin: 200 auto;
+		text-align: center;
+		background-color: rgb(209, 181, 181);
+		width: 500px;
+		height: 300px;
+		box-shadow: 2px 2px 5px 5px rgb(73, 69, 69);
+		border-radius: 30px;
+		gap: 20px;
+        color: white;
+		.input-group {
+			label {
+				display: block;
+				font-size: 2rem;
+				margin-bottom: 5px;
+			}
+			input {
+				padding: 10 30;
+				border-radius: 10px;
+				border: none;
+				background-color: rgb(141, 117, 117);
+                color: white;
+				
+			}
+            textarea{
+                border-radius: 10px;
+				border: none;
+				background-color: rgb(141, 117, 117);
+                max-height: 100px;
+                max-width: 300px;
+                color: white;
+                font-size: 15px;
+                padding: 10px;
+            }
+		}
+		button {
+			padding: 10px 30px;
+			font-size: 1.25rem;
+			border-radius: 15px;
+			text-transform: uppercase;
+			border: none;
+			background-color: rgb(207, 83, 83);
+		}
+	}
+}

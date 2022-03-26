@@ -12,13 +12,23 @@ class AdminPage{
             $this->pageName = isset($request) && !empty($request{"page"})? $request['page']: "home";
             $this->getModel();
             if($_SERVER["REQUEST_METHOD"] == "POST"){
-                print_r($_SERVER["REQUEST_METHOD"]);
+                $this->getPostMethod($_POST['action']);
             }else{
                 $this->getController();
             }
         }
     }
     
+    public function getPostMethod($action){
+        $controllerName = $this->getControllerName();
+        $controllerPath = $this->getControllerPath();
+
+        require_once $controllerPath;
+
+        $controller = new $controllerName($this->pageName);
+
+        $controller->$action($_POST);
+    }
     public function getController(){
         $controllerName = $this->getControllerName();
         $controllerPath = $this->getControllerPath();

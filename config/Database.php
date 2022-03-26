@@ -53,15 +53,10 @@ class Database{
     }
 
     public function execute($query){
-        $data = [];
 
         $sql = $this->pdo->prepare($query);
         $sql->execute();
-
-        while($row = $sql->fetch()){
-            $data = $row;
-        }
-
-        return $data;
     }
+
+
 }
